@@ -4,10 +4,11 @@ import { graphql } from "gatsby"
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
-    <div>
-      <div>
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
+    <div style={{margin:'5rem auto'}}>
+        <div style={{margin:'0px auto 0px auto', maxWidth:'39rem'}}>
+            <h1 style={{fontFamily:'S-CoreDream-8Heavy'}}>{post.frontmatter.title}</h1>
+            <span style={{float:'right'}}>{post.frontmatter.date}</span>
+            <div dangerouslySetInnerHTML={{ __html: post.html }} />
       </div>
     </div>
   )
@@ -19,6 +20,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date
       }
     }
   }
