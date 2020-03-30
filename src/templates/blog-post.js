@@ -7,8 +7,13 @@ export default ({ data }) => {
   return (
     <Layout>
         <h1>{post.frontmatter.title}</h1>
-        <span style={{float:'right'}}>{post.frontmatter.date}</span>
+        
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <div>
+            <div>이전 글 : </div>
+            <div>다음 글 : </div>
+            <span style={{float:'right'}}>{post.frontmatter.date}</span>
+        </div>
     </Layout>
   )
 }
