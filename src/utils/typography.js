@@ -5,14 +5,17 @@ githubTheme.overrideStyles = () => {
     return {
         h1:{
             fontFamily:'S-CoreDream-8Heavy',
-            borderBottom: 'solid 2px lightgrey',
             paddingBottom: '3px',
             marginBottom:'30px'
         },
         blockQuote: {
             marginLeft: '0px',
             paddingLeft:'0.625rem',
-            borderLeft:'3px solid black'
+            borderLeft:'3px solid black',
+            height:'2rem'
+        },
+        'blockQuote>p':{
+            paddingTop:'0.7em',
         }
     }
 }
