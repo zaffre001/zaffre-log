@@ -16,6 +16,8 @@
   "dependencies": {
     "@emotion/core": "^10.0.28",
     "@emotion/styled": "^10.0.27",
+    "@primer/octicons": "^9.6.0",
+    "@primer/octicons-react": "^9.6.0",
     "gatsby": "^2.19.45",
     "gatsby-image": "^2.3.1",
     "gatsby-plugin-emotion": "^4.2.1",

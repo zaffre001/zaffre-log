@@ -6,7 +6,8 @@ import { rhythm } from "../utils/typography"
 
 export default ({ data }) => (
     <Layout>
-        <h1>Hello 희정!</h1>
+        <h1>zaffre workspace</h1>
+        
         <h2>{data.allMarkdownRemark.totalCount} 글 목록</h2>
 
         {data.allMarkdownRemark.edges.map(({ node }) => (

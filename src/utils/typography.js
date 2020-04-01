@@ -8,6 +8,9 @@ githubTheme.overrideStyles = () => {
             paddingBottom: '3px',
             marginBottom:'30px'
         },
+        h2:{
+            marginTop:'30px'
+        },
         blockQuote: {
             marginLeft: '0px',
             paddingLeft:'0.625rem',
